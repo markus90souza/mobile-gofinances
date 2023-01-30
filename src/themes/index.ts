@@ -1,6 +1,7 @@
 export default {
   colors: {
     white: '#FFFFFF',
+    black: '#000000',
     purple500: '#5636D3',
     orange300: 'rgba(255, 135, 44, 0.3)',
     orange500: '#FF872C',

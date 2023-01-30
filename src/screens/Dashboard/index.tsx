@@ -8,7 +8,10 @@ import {
   ProfileInfo,
   Username,
   Icon,
+  HighlightCards,
 } from './styles'
+
+import { Highlight } from '@components/Cards/Highlight'
 
 interface DashboardProps {}
 
@@ -29,6 +32,34 @@ export function Dashboard({}: DashboardProps) {
           <Icon name="power" />
         </Wrapper>
       </Header>
+
+      <HighlightCards
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          paddingHorizontal: 24,
+        }}
+      >
+        <Highlight
+          type="down"
+          title="Saida"
+          amount="14.000,00"
+          lastTransaction="12 de Feveiro"
+        />
+        <Highlight
+          type="up"
+          title="Entrada"
+          amount="12.000,00"
+          lastTransaction="11 de Feveiro"
+        />
+
+        <Highlight
+          type="total"
+          title="Total"
+          amount="2.000,00"
+          lastTransaction="11 de Feveiro"
+        />
+      </HighlightCards>
     </Container>
   )
 }

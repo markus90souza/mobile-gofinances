@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'styled-components/native'
 import {
   useFonts,
   Poppins_400Regular,
@@ -7,8 +8,6 @@ import {
 
 import { Dashboard } from '@screens/Dashboard'
 import theme from '@themes/index'
-
-import { ThemeProvider } from 'styled-components/native'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
