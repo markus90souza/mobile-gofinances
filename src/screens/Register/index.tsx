@@ -5,6 +5,7 @@ import { Container, Form, Header, Title, Box, BoxType } from './styles'
 import { Button } from '@components/Form/Button'
 import { ButtonType } from '@components/Form/ButtonType'
 import { Input } from '@components/Form/Input'
+import { SelectCategory } from '@components/Form/SelectCategory'
 
 interface RegisterProps {}
 
@@ -38,6 +39,8 @@ export function Register({}: RegisterProps) {
               isActive={transactionType === 'outcome'}
             />
           </BoxType>
+
+          <SelectCategory title="Categoria" />
         </Box>
 
         <Button title="Entrar" activeOpacity={0.7} />
