@@ -28,3 +28,10 @@ export const Form = styled.View`
   justify-content: space-between;
 `
 export const Box = styled.View``
+
+export const BoxType = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: ${RFValue(8)}px;
+  margin-bottom: ${RFValue(16)}px;
+`
