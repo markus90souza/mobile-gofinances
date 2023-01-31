@@ -9,6 +9,7 @@ import {
 import { Dashboard } from '@screens/Dashboard'
 import theme from '@themes/index'
 import { StatusBar } from 'react-native'
+import { Register } from '@screens/Register'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   )
 }

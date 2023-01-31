@@ -1,3 +1,7 @@
+import { Platform } from 'react-native'
+import { FlashList } from '@shopify/flash-list'
+import { getBottomSpace } from 'react-native-iphone-x-helper'
+
 import {
   Container,
   Greeting,
@@ -15,9 +19,6 @@ import {
 
 import { Highlight } from '@components/Cards/Highlight'
 import { Transaction } from '@components/Cards/Transaction'
-import { Platform } from 'react-native'
-import { getBottomSpace } from 'react-native-iphone-x-helper'
-import { FlashList } from '@shopify/flash-list'
 
 interface DashboardProps {}
 
